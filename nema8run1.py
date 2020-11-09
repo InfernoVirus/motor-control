@@ -16,8 +16,8 @@ def clockwise(count):
     try:
         print("clk")
         GPIO.output(17, GPIO.LOW) #enable high
-        GPIO.output(10, GPIO.HIGH) #dir enable
-        GPIO.output(9, GPIO.LOW) #dir enable
+        GPIO.output(10, GPIO.HIGH) #dir + enable
+        GPIO.output(9, GPIO.LOW) #dir - disable
         while True:
             GPIO.output(11, GPIO.HIGH)
             time.sleep(700/1000000)
