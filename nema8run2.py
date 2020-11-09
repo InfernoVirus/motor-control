@@ -1,3 +1,7 @@
+#17 -- enable pin 
+#13 -- dir +
+#19 -- dir -
+#26 -- pul +
 import RPi.GPIO as GPIO
 import time
 import os
